@@ -1,0 +1,127 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/tylermcginnis/re-base#readme"
+
+    >re-base (v2.7.0)</a>
+</h1>
+<h4>A Relay inspired library for building React.js + Firebase applications.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.re-base">module re-base</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.re-base.createClass">
+            function <span class="apidocSignatureSpan">re-base.</span>createClass
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.re-base" id="apidoc.module.re-base">module re-base</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.re-base.createClass" id="apidoc.element.re-base.createClass">
+        function <span class="apidocSignatureSpan">re-base.</span>createClass
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createClass(config) {
+	      var name = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : &#x27;[DEFAULT]&#x27;;
+
+	      if (typeof apps[name] !== &#x27;undefined&#x27;) {
+	        return apps[name];
+	      } else {
+	        (0, _validators._validateConfig)(config);
+	        var app = _firebase2.default.initializeApp(config, name);
+	      }
+	      apps[name] = init(app);
+	      return apps[name];
+	    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##### Return Value
+  An instance of re-base.
+
+##### Example
+
+```javascript
+var Rebase = require(&#x27;re-base&#x27;);
+var base = Rebase.<span class="apidocCodeKeywordSpan">createClass</span>({
+      apiKey: &#x22;apiKey&#x22;,
+      authDomain: &#x22;projectId.firebaseapp.com&#x22;,
+      databaseURL: &#x22;https://databaseName.firebaseio.com&#x22;,
+      storageBucket: &#x22;bucket.appspot.com&#x22;,
+      messagingSenderId: &#x22;xxxxxxxxxxxxxx&#x22;
+}, &#x27;myApp&#x27;);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
