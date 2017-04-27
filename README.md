@@ -1,6 +1,6 @@
 # npmdoc-re-base
 
-#### api documentation for  re-base (v2.7.0)  [![npm package](https://img.shields.io/npm/v/npmdoc-re-base.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-re-base) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-re-base.svg)](https://travis-ci.org/npmdoc/node-npmdoc-re-base)
+#### basic api documentation for  [re-base (v2.7.0)](https://github.com/tylermcginnis/re-base#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-re-base.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-re-base) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-re-base.svg)](https://travis-ci.org/npmdoc/node-npmdoc-re-base)
 
 #### A Relay inspired library for building React.js + Firebase applications.
 
@@ -21,18 +21,16 @@
 ```json
 
 {
-    "name": "re-base",
-    "version": "2.7.0",
-    "description": "A Relay inspired library for building React.js + Firebase applications.",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/tylermcginnis/re-base"
+    "author": {
+        "name": "Tyler McGinnis and Jacob Turner"
     },
-    "author": "Tyler McGinnis and Jacob Turner",
+    "bugs": {
+        "url": "https://github.com/tylermcginnis/re-base/issues"
+    },
     "dependencies": {
         "firebase": "^3.5.2"
     },
+    "description": "A Relay inspired library for building React.js + Firebase applications.",
     "devDependencies": {
         "babel-core": "^6.18.0",
         "babel-loader": "^6.2.7",
@@ -53,12 +51,39 @@
         "react-dom": "^15.3.2",
         "webpack": "^1.13.3"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "a8adcba84ffb483d4f7a6b8ff343123c5d23d81c",
+        "tarball": "https://registry.npmjs.org/re-base/-/re-base-2.7.0.tgz"
+    },
+    "gitHead": "4d40ef2fa05ab6e05f52ecdbb7a904121488dbf5",
+    "homepage": "https://github.com/tylermcginnis/re-base#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "jisraelturner"
+        },
+        {
+            "name": "qwales1"
+        },
+        {
+            "name": "tylermcginnis"
+        }
+    ],
+    "name": "re-base",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tylermcginnis/re-base.git"
+    },
     "scripts": {
         "build": "webpack",
         "test": "karma start tests/karma.conf.js",
         "travis": "./node_modules/karma/bin/karma start tests/karma.conf.js"
     },
-    "license": "MIT"
+    "version": "2.7.0",
+    "bin": {}
 }
 ```
 
